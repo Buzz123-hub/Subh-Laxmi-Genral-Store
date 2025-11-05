@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - My General Store</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">🛒 Subh Laxmi General Store</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html" class="active">Products</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <section class="controls">
+    <input type="text" id="search" placeholder="🔍 Search products..." onkeyup="searchProducts()">
+    <select id="categoryFilter" onchange="filterByCategory()">
+      <option value="all">All Categories</option>
+      <option value="groceries">Groceries</option>
+      <option value="toiletries">Toiletries</option>
+      <option value="snacks">Snacks</option>
+    </select>
+  </section>
+
+  <section class="product-grid" id="product-list"></section>
+
+  <footer>
+    <p>© 2025 Subh Laxmi General Store</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
